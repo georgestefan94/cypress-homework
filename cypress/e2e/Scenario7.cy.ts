@@ -16,6 +16,9 @@ describe('Scenario 7 - API Auth', function ()
             cy.log(JSON.stringify(response.body, null, 2));
 
             const token: string = response.body.accessToken;
+            cy.log(token)
+
+            // could use a JWT decoder to check what's inside this token (https://www.jwt.io/)
 
             authApi.getMe(token).then((response) => {
                 expect(response.status).to.eq(200);
