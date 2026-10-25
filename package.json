@@ -1,0 +1,22 @@
+{
+  "name": "cypress-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "test": "cypress run --e2e",
+  "cy:run": "cypress run --e2e",
+  "cy:open": "cypress open --e2e"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "cypress": "^16.2.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-real-events": "^1.15.1",
+    "typescript": "^7.0.2"
+  }
+}

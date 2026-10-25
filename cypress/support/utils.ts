@@ -1,0 +1,1 @@
+export const parsePrice = (text: string) => parseFloat(text.replace(/[^0-9.]/g, ''));
